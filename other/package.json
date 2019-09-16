@@ -1,0 +1,11 @@
+{
+  "name": "technical-test-appaloosa",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "@miragejs/server": "0.1.25"
+  }
+}
