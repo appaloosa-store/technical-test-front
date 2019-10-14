@@ -1,4 +1,3 @@
-import { camelize } from '@ember/string';
 import { isPresent, isNone } from '@ember/utils';
 import Mirage from 'ember-cli-mirage';
 
@@ -8,7 +7,6 @@ function sort_data(data, sortCriteria) {
   let sortDirection = /^-/g.test(sortCriteria) ? 'desc' : 'asc';
   let sortProperty = sortCriteria.replace(/^-/g, '');
 
-  sortProperty = camelize(sortProperty);
   data = data.sort((a, b) => {
     return a[sortProperty].localeCompare(b[sortProperty]);
   });
